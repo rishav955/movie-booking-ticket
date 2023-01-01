@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Login Form with validation Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div id="login-form-wrap">
+
+  <h2>Login</h2>
+  <form method="post" id="login-form" name="myForm" onsubmit="validation(); return false">
+    <p><input type="text" name="username" placeholder="Username" required><i class="validation"><span></span><span></span></i></p>
+    <p><input type="email" name="email" placeholder="Email Address" required><i class="validation"><span></span><span></span></i></p>
+    <p><input type="submit" id="login" value="Login"></p>
+  </form>
+
+  <div id="create-account-wrap">
+    <p>Not a member? <a href="Sign-Up.html">Create Account</a><p>
+  </div>
+
+</div>
+
+<script type="text/javascript">
+  validation = function() {
+  var x = document.forms["myForm"]["username"].value;
+  var y = document.forms["myForm"]["email"].value;
+  if (x != "" && y != "") {
+    window.location.href="Body.html"
+  } else {
+    alert("Please Enter Credential");
+  };
+}
+
+</script>
+</body>
+</html>

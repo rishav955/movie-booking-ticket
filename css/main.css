@@ -1,0 +1,12 @@
+body{
+    background-image:url("/img/bgimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#LogOut{
+    padding : 10px;
+    text-align: center;
+}
+#LogOut span{
+    background-color: ;
+}
